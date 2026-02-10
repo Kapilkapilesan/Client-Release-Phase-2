@@ -23,7 +23,7 @@ export default function FundTransactionsPage() {
     // Permission checks
     const canViewShareholders = authService.hasPermission('finance.shareholders');
     const canViewInvestments = authService.hasPermission('finance.investments');
-    const canDisburseLoans = authService.hasPermission('finance.approveloanpayout');
+    const canDisburseLoans = authService.hasPermission('loans.approve');
     const canDisburseSalaries = authService.hasPermission('finance.disburse_salary');
     const canDisburseStaffLoans = authService.hasPermission('finance.staffloans');
     const canProcessInvestmentPayouts = authService.hasPermission('finance.investmentpayouts');
